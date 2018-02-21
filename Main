@@ -1,0 +1,24 @@
+class main:
+    def vraagBronbestand(self, bronbestand):
+        bronbestand = input('Geef bronbestand op')
+        return bronbestand
+    def vraagDoelbestand(self, doelbestand):
+        doelbestand = input('geef doelbstand op')
+        return doelbestand
+
+
+class ander(main):
+    def geefInputTerug(self):
+        m=main
+        print (m.vraagDoelbestand(self,doelbestand=input))
+        print (m.vraagBronbestand(self, bronbestand=input))
+
+
+
+if __name__ == '__main__':
+    main.vraagBronbestand()
+    main.vraagDoelbestand()
+    m=main
+    ander.geefInputTerug(self=print)
+
+#if __name__ =='__ander__':
